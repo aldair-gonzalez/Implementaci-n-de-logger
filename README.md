@@ -11,6 +11,9 @@ Implementar un logger.
 - Crear un endpoint /loggerTest que permita probar todos los logs
 
 ## Inicio  de sesión
+
+A la hora de iniciar el proyecto en producción hay que modificar la api de peticiones de la carpeta `src/public/js/utils/api.js` reemplazando el puerto 8080 por el puerto 3000
+
 - `ADMIN`:
 ```
   email: admin@gmail.com
@@ -95,17 +98,7 @@ $ npm install # or `pnpm install` or `yarn install`
 ```
 
 ## Configuración del Proyecto con Standard.js
-Colocamos la siguiente configuración en el archivo `package.json`
-
-```JSON
-{  
-  "eslintConfig": {
-    "extends": "./eslintrc.json"
-  }
-}
-```
-
-Después hubicarse dentro del siguiente directorio
+Hubicarse dentro del siguiente directorio
 
 ```
 ├── node_modules/
